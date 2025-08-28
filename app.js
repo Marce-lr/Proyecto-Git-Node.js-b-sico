@@ -6,6 +6,11 @@ app.get("/", (req, res) => {
   res.send("¡Git + Node.js básico! servidor con Node.js y Express.");
 });
 
+// Segundo endpoint
+app.get("/endpoint2", (req, res) => {
+  res.send("¡Este es el Endpoint 2!");
+});
+
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
