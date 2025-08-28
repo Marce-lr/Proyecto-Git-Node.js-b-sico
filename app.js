@@ -10,6 +10,11 @@ app.get("/endpoint1", (req, res) => {
   res.send("¡Este es el Endpoint 1!");
 });
 
+// Segundo endpoint
+app.get("/endpoint2", (req, res) => {
+  res.send("¡Este es el Endpoint 2!");
+});
+
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
